@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Muhammad Rifadh Athallah PIBS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="_DSC7397.JPG" alt="Logo" class="header-img">
+        <h1>Muhammad Rifadh Athallah</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('biodata')">Biodata</a></li>
+            <li><a href="#" onclick="showSection('pendidikan')">Pendidikan</a></li>
+            <li><a href="#" onclick="showSection('pengalaman')">Pengalaman</a></li>
+            <li><a href="#" onclick="showSection('keahlian')">Keahlian</a></li>
+            <li><a href="#" onclick="showSection('publikasi')">Publikasi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections for each navigation item -->
+    <section id="biodata" class="content-section">
+        <h2>Biodata</h2>
+        <p><strong>NIM:</strong> 2023081020</p>
+        <p><strong>Nama:</strong> Muhammad Rifadh Athallah</p>
+        <p><strong>Agama:</strong> Islam</p>
+        <p><strong>Tanggal Lahir:</strong> 27 Juni 1980</p>
+        <p><strong>Tempat Lahir:</strong> Banten</p>
+
+    </section>
+
+    <section id="pendidikan" class="content-section" style="display:none;">
+        <h2>Pendidikan</h2>
+        <p><strong>S1:</strong> Universitas Pembangunan Jaya</p>
+
+
+
+    </section>
+
+    <section id="pengalaman" class="content-section" style="display:none;">
+        <h2>Pengalaman</h2>
+        <p><strong>GIDHUB:</strong> Divisi Acara</p>
+        <p><strong>Prima 2024:</strong> Divisi Mentor</p>
+        <p><strong>ISLT:</strong> Divisi Acara</p>
+        <p><strong>Makrab SIF:</strong> Badan Pengurus Harian</p>
+
+
+    </section>
+
+    <section id="keahlian" class="content-section" style="display:none;">
+        <h2>Keahlian</h2>
+        <p><strong>Kebisaan:</strong> Programming, Event Management, Organisasi</p>
+    </section>
+
+    <section id="publikasi" class="content-section" style="display:none;">
+        <h2>Publikasi</h2>
+        <p><strong>Paper 1:</strong> Karya Ilmiah: Teknologi Komputer terkait Perusahaan XYZ</p>
+
+    </section>
+
+    <!-- Aside Section -->
+        <aside>
+            <h2>Hobi</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Rajin Sholat</li>
+                <li>Perbanyak Amal Ibadah</li>
+                
+            </ul>
+        </aside>
+    <footer>
+        <div class="social-media">
+            <p>Twitter: @rifadhath</p>
+            <p>FB: @rifadhath</p>
+            <p>Instagram: @rifadhath</p>
+        </div>
+        <p>© Copyright 2024. All Rights Reserved</p>
+        <p>Web Rifadh  -----</p>
+    </footer>
+
+<script>
+    function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.getElementsByClassName('content-section');
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+    }
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
